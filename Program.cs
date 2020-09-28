@@ -47,6 +47,11 @@ namespace SnakeLadderPractice
                     currentPosition = startPosition;
                     Console.WriteLine("Position reset to: " + currentPosition);
                 }
+                if (currentPosition > 100)
+                {
+                    currentPosition -= jump;
+                    Console.WriteLine("Position reset to: " + currentPosition);
+                }
             }
                 
             Console.ReadKey();
